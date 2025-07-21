@@ -34,4 +34,9 @@ public class ProductController {
     public UUID saveNewProduct(@RequestBody NewProductRequest product) {
         return productService.saveNewProduct(product);
     }
+
+    @PutMapping("/{id}")
+    public void updateProduct(@PathVariable UUID id, @RequestBody UpdateProductRequest productUpdateRequest) {
+        productService.updateProduct(id, productUpdateRequest);
+    }
 }

@@ -4,7 +4,7 @@ import jakarta.validation.constraints.*;
 
 import java.math.BigDecimal;
 
-public record NewProductRequest(
+public record UpdateProductRequest(
         @NotBlank
         @Size(
                 min = 2,

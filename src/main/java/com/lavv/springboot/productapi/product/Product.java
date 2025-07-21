@@ -18,6 +18,7 @@ public class Product {
     @Column(nullable = false, length = 50)
     private String name;
 
+    @Column(length = 500)
     private String description;
 
     @Column(nullable = false, precision = 10, scale = 2)
